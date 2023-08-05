@@ -1,0 +1,143 @@
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Company Logo */
+img {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination li {
+    margin: 0 4px;
+}
+
+.pagination .page-link {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+}
+
+.pagination .page-link:hover {
+    background-color: #f0f0f0;
+}
+
+
+span.relative.z-0.inline-flex.shadow-sm.rounded-md {
+    display: none;
+}
+/* Adding Css for form now*/
+/* Styling for Company Form */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form h1 {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+h1,h2 {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Styling for Select Box */
+select {
+    appearance: none; /* Hide default arrow on some browsers */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Style the dropdown arrow */
+select::after {
+    content: "\f107"; /* Unicode for down arrow icon (Font Awesome used here) */
+    font-family: "Font Awesome 5 Free"; /* Use the font family of your preferred icon library */
+    font-weight: 900;
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Make the arrow unclickable */
+}
+
+/* Style the option elements */
+select option {
+    padding: 10px;
+}
